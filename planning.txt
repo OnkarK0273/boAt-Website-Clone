@@ -1,0 +1,44 @@
+Project - boat life style (e-commerse)
+
+  web -Pages(milestones)
+
+    1.Product page
+    2.Add to cart page
+    3.Sig-up page
+    4.Log in page
+
+
+
+1. Product page issue   / day 2
+
+    1. Create navbar - it is common for all pages 
+       4 options in the navbar - login,add to card,offer zone,dailly deals
+
+    2. Dynamic Boat banner poster
+
+    3. Products containers - per container has 4 childs and each has add to cart functionalities and stored in local storage
+
+       1. Daily deals container (4 childs)
+       2. Biggest launches container (4 childs)
+       3. Smartwatch container (4 childs)
+       4. Trending wireless container (4 child)
+       5. Home audio container (4 child)
+
+    4. Bottom page poster - two childs in container
+
+    5. Footer
+
+2.  Add to card page issues  / day-3
+
+    Show that product from local storage
+    It also contains two buttons - cash on delivery and pays via card
+
+3. Sign-up page issues    / day-4
+
+    Create sign form, get data from the user, and store all data to local storage
+
+4. Login page issues     /day -5
+
+    Create login page form and match users' data with local storage data
+
+
