@@ -22,7 +22,7 @@
 
 .slider{
     height: auto;
-    width:265px ;
+    width:95% ;
     background-color:#E3E3E3;
     border-radius:20px;
    
@@ -136,7 +136,227 @@ h1{
     text-align: center;
     letter-spacing:0.2rem;
     margin: 40px 0 40px 0;
+    font-size:40px;
 }
+
+
+
+/* bootom poster */
+.post{
+    margin-top: 40px;
+    width: 100%;
+    height: 550px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    justify-content:space-around;
+    align-items: center;
+    border: 0px solid white;
+}
+.post>.img{
+    width: 60%;
+    margin: auto;
+}
+.post>.img:hover{
+    background-image: url('https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Radiant_-Rebel_-Trailblazer_jpg_563x.jpg?v=1651227770');
+}
+
+.post>.img>img{
+    width: 100%;
+}
+.post>.img>img:hover{
+    width: 100%;
+   opacity: 0; 
+}
+.post>.info{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.info {
+    color: white;
+}
+.info>h2{
+    font-size: 40px;
+    
+}
+.info>h2>a{
+    color: crimson;
+}
+.info>h2+hr{
+    background-color: crimson;
+    width:20%;
+    height:0.1rem;
+}
+
+.newsimg{
+    width: 100%;
+}
+
+/* delivery featyure */
+.deli{
+    display:flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    row-gap:40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+.deli {
+    color: white;
+}
+.deli>h2{
+    font-size:30px;
+}
+.delichild{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.delichild img{
+    width:6%;
+}
+
+/* footer */
+.fast{
+    background-color: #2C2C2C;
+    padding: 20px;
+
+}
+.fast>div{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.fast>div p{
+    font-size: small;
+    color: #8F8F8F;
+}
+.footer{
+    display: flex;
+    border: 0px solid white;
+    background-color: black;
+    padding:25px;
+    
+
+}
+.help{
+    width: 55%;
+    border: 0px solid white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.help>div>p{
+    
+    margin-bottom: 15px;
+    color: #8F8F8F;
+    font-size: small;
+}
+.help>div>p:first-child{
+    color: white;
+}
+.suscribe{
+    width:45%;
+    border: 0px solid white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    
+}
+.suscribe>img{
+    width:90px;
+}
+.suscribe>p{
+    color: #8F8F8F;
+    font-size: small;
+    margin-top: 20px;
+    margin-bottom:20px;
+    
+
+}
+.sub{
+    display: flex;
+    border: 1px solid #8F8F8F;
+    width: 80%;
+    height: 50px;
+    border-radius:5px;
+    justify-content: space-between;
+    padding:2px;
+    align-items: center;
+    
+    
+}
+.sub>div>input{
+    color: #8F8F8F;
+    font-size: small;
+    margin-top: 20px;
+    font-weight: lighter;
+    border: 0px solid white;
+    margin:10px;
+    background-color: black;
+    border: none;
+}
+.sub>div+button{
+    width:160px;
+    padding: 12px;
+    border-radius:5px;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+}
+.social{
+    display: flex;
+    border:0px solid white;
+    width: 40%;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+.social img{
+    background-color: azure;
+    border-radius:100px;
+    width:20px;
+}
+.social>a>img:hover{
+    background-color: azure;
+    border-radius:10px;
+    width:21px;
+
+}
+.playstore{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    
+    margin: auto;
+}
+.playstore>.app{
+    display: flex;
+    color: white;
+    border: 0px solid white;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.copyrigth{
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -147,25 +367,104 @@ h1{
 /* Medium screens */
 @media all and (min-width: 651px) and (max-width: 900px) {
 
+#poster{
+    width: 100%;
+}
+/* containers */
+
 .card{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
-    row-gap: 20px;
-  
-    
+    row-gap: 20px;  
+}
+.slider{
+    width:95%;
+    margin: auto;
 }
 
+
+/* bottom poster */
+
+.post{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
 }
+.post>.info{
+    width: 60%;
+    margin: auto;
+    row-gap: 40px;
+}
+
+/* footer */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.help{
+    width: 80%;
+    border: 0px solid white;
+    margin: auto;
+}
+.suscribe{
+    width:80%;
+    margin: auto;
+
+}
+
+
+}
+
+
 /* Small screens */
+
 @media all and (min-width: 250px) and (max-width: 650px) {
+
+#poster{
+    width: 100%;
+}
+
+/* containers */
 .card{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(4,1fr);
-    row-gap: 20px;
-  
-    
+    row-gap: 20px;    
+}
+.slider{
+    width:95%;
+}
+
+/* bottom poster */
+
+.post{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.post>.info{
+    width: 60%;
+    margin: auto;
+    row-gap: 40px;
+}
+
+/* footer */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.help{
+    width: 80%;
+    border: 0px solid white;
+    margin: auto;
+}
+.suscribe{
+    width:80%;
+    margin: auto;
+
 }
 
 }
