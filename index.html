@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/elegantthemes/beautiful-flat/128/sail-boat-icon.png"  type="image/x-icon">
     <link rel="stylesheet" href="nav-foot.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="addtocarg.css">
     
    <style>
    
@@ -28,8 +29,19 @@
         </div>
         <div class="nav">
             <p><input type="text" placeholder="  Serch...." value=""></p>
-            <p><a href=""><i class="material-icons" style="font-size:36px">person</i></a></p>
-            <p><a href=""><i class="material-icons" style="font-size:36px">add_shopping_cart</i></a></p>
+            <p><a href="#"><i class="material-icons" style="font-size:36px">person</i></a></p>
+            <p><a href="#"><i id="cardclick" class="material-icons" style="font-size:36px">add_shopping_cart</i></a></p>
+        </div>
+    </div>
+
+    <!-- popup  -->
+    <div class="modal__wrapper">
+        <div class="modal__container">
+            <button class="close">&times;</button>
+            <h2>Hii bo<a>A</a>thead</h2>
+            <div class="action">
+                <button class="btn__purple">Login/Signup</button>
+            </div>
         </div>
     </div>
     
@@ -398,77 +410,77 @@
         <!-- 4 child -->
 
         <div class="slider">
-            <div class="image">
+            <div class="image" id="image1">
                 <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/01_1d174cd4-5898-4449-a249-d414a0205e47_400x.jpg?v=1659966176" alt="">
                 <div class="tag">
                     <span class="ta backred">You Save 50%</span>
                 </div>
             </div>
     
-            <div class="product-details">
+            <div class="product-details" id="button1">
                 <h3>Boat Air drop</h3>
                 <p><i class="material-icons" style="font-size:15px;color:red"> star_rate</i>4.8|1146 review</p>
                 <hr>
                 <h3 class="red">₹ 1,525  <a class="gray"> ₹ 799</a></h3>
                 <p>you save 140 (63%)</p>
-                <button class="backred hei">Add To card</button>
+                <button onclick="likeMe1()" class="backred hei">Add To card</button>
     
             </div>
         </div>
     
         <div class="slider">
-            <div class="image">
+            <div class="image" id="image2">
                 <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Ab-550_400x.png?v=1639053174" alt="">
                 <div class="tag">
                     <span class="ta backred">You Save 65%</span>
                 </div>
             </div>
     
-            <div class="product-details">
+            <div class="product-details" id="button2">
                 <h3>Boat Air drop</h3>
-                <p><i class="material-icons" style="font-size:15px;color:red"> star_rate</i>4.8|1146 review</p>
+                <p><i class="material-icons" style="font-size:15px;color:red"> star_rate</i>4.9|1146 review</p>
                 <hr>
                 <h3 class="red">₹ 1,525  <a class="gray"> ₹ 799</a></h3>
                 <p>you save 140 (63%)</p>
-                <button class="backred hei">Add To card</button>
+                <button onclick="likeMe2()" class="backred hei">Add To card</button>
     
             </div>
         </div>
     
-        <div class="slider">
-            <div class="image">
+        <div class="slider" >
+            <div class="image" id="image3">
                 <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/aavante-bar-1160-2_b0b3aa4f-c695-4157-857c-1864c2ac947f_400x.png?v=1629091906" alt="">
                 <div class="tag">
                     <span class="ta backred">You Save 82%</span>
                 </div>
             </div>
     
-            <div class="product-details">
+            <div class="product-details" id="button3">
                 <h3>Boat Air drop</h3>
-                <p><i class="material-icons" style="font-size:15px;color:red"> star_rate</i>4.8|1146 review</p>
+                <p><i class="material-icons" style="font-size:15px;color:red"> star_rate</i>5.0|1146 review</p>
                 <hr>
                 <h3 class="red">₹ 1,525  <a class="gray"> ₹ 799</a></h3>
                 <p>you save 140 (63%)</p>
-                <button class="backred hei">Add To card</button>
+                <button onclick="likeMe3()" class="backred hei">Add To card</button>
     
             </div>
         </div>
     
         <div class="slider">
-            <div class="image">
+            <div class="image" id="image4">
                 <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-image_2_1_400x.png?v=1656914178" alt="">
                 <div class="tag">
                     <span class="ta backred">You save 69%</span>
                 </div>
             </div>
     
-            <div class="product-details">
+            <div class="product-details" id="button4">
                 <h3>Boat Air drop</h3>
-                <p><i class="material-icons" style="font-size:15px;color:red"> star_rate</i>4.8|1146 review</p>
+                <p><i class="material-icons" style="font-size:15px;color:red"> star_rate</i>5.1|1146 review</p>
                 <hr>
                 <h3 class="red">₹ 1,525  <a class="gray"> ₹ 799</a></h3>
                 <p>you save 140 (63%)</p>
-                <button class="backred hei">Add To card</button>
+                <button onclick="likeMe4()" class="backred hei">Add To card</button>
     
             </div>
         </div>
@@ -595,6 +607,8 @@
     <p class="copyrigth">© 2022 Imagine Marketing Limited. All Rights Reserved.</p>
 
 
+   
+
 
 
 
@@ -608,3 +622,4 @@
 
 </body>
 </html>
+<script src="addtocard.js"></script>

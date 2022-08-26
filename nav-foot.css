@@ -14,15 +14,21 @@ body{
     font-weight:500;
     padding: 10px;
     text-align: center;
+    margin-top: -8px;
+    margin-bottom: 10px;
 }
 #navbar{
+    
     display: flex;
     justify-content: space-between;
     padding: 17px;
     border: 0px solid white;
+    background-color: #141414;
+    align-items: center;
 }
 #navbar>img{
     height: 40px;
+    margin-bottom:5px;
 }
 #navbar>.nav{
     display: flex;
@@ -38,15 +44,16 @@ body{
 }
 #navbar>.navmid{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    column-gap:80px;
+    column-gap:60px;
     border: 0px solid white;
+    
 }
 #navbar>.navmid p{
     color: white;
    font-size: larger;
-   letter-spacing:0.3rem;
+   
 }
 .nav input{
     border-radius: 30px;
@@ -56,3 +63,183 @@ body{
 }
 
 /* footer.css */
+.fast{
+    background-color: #2C2C2C;
+    padding: 20px;
+
+}
+.fast>div{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.fast>div p{
+    font-size: small;
+    color: #8F8F8F;
+}
+.footer{
+    display: flex;
+    border: 0px solid white;
+    background-color: black;
+    padding:25px;
+    
+
+}
+.help{
+    width: 55%;
+    border: 0px solid white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.help>div>p{
+    
+    margin-bottom: 15px;
+    color: #8F8F8F;
+    font-size: small;
+}
+.help>div>p:first-child{
+    color: white;
+}
+.suscribe{
+    width:45%;
+    border: 0px solid white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    
+}
+.suscribe>img{
+    width:90px;
+}
+.suscribe>p{
+    color: #8F8F8F;
+    font-size: small;
+    margin-top: 20px;
+    margin-bottom:20px;
+    
+
+}
+.sub{
+    display: flex;
+    border: 1px solid #8F8F8F;
+    width: 80%;
+    height: 50px;
+    border-radius:5px;
+    justify-content: space-between;
+    padding:2px;
+    align-items: center;
+    
+    
+}
+.sub>div>input{
+    color: #8F8F8F;
+    font-size: small;
+    margin-top: 20px;
+    font-weight: lighter;
+    border: 0px solid white;
+    margin:10px;
+    background-color: black;
+    border: none;
+}
+.sub>div+button{
+    width:160px;
+    padding: 12px;
+    border-radius:5px;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+}
+.social{
+    display: flex;
+    border:0px solid white;
+    width: 40%;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+.social img{
+    background-color: azure;
+    border-radius:100px;
+    width:20px;
+}
+.social>a>img:hover{
+    background-color: azure;
+    border-radius:10px;
+    width:21px;
+
+}
+.playstore{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    
+    margin: auto;
+}
+.playstore>.app{
+    display: flex;
+    color: white;
+    border: 0px solid white;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.copyrigth{
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: black;
+}
+
+
+
+
+/* Medium screens */
+@media all and (min-width: 651px) and (max-width: 900px) {
+
+    /* footer */
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .help{
+        width: 80%;
+        border: 0px solid white;
+        margin: auto;
+    }
+    .suscribe{
+        width:80%;
+        margin: auto;
+
+    }
+
+
+}
+
+
+/* Small screens */
+
+@media all and (min-width: 250px) and (max-width: 650px) {
+
+    /* footer */
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .help{
+        width: 80%;
+        border: 0px solid white;
+        margin: auto;
+    }
+    .suscribe{
+        width:80%;
+        margin: auto;
+
+    }
+
+}
+
