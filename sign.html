@@ -39,14 +39,28 @@
     <img src="icon/9.png" alt="">
     <img src="icon/10.png" alt="">
    </div>
-   <div class="form">
-    <input type="text" placeholder="First Name">
-    <input type="text" placeholder="Last Name">
-    <input type="email" placeholder="E-mail">
-    <input type="password" placeholder="Password        Forget Password?">
+   <form class="form">
+    <input type="text" placeholder="First Name" id="fname">
+    <input type="text" placeholder="Last Name" id="lname">
+    <input type="email" placeholder="E-mail" id="email">
+    <input type="password" placeholder="Password        Forget Password?" id="pass">
     <input type="submit" value="Create Account" id="login">
-   </div>
+   </form>
    <p>Already have an account? <a href="log.html"> Login </a> </p>
+
+
+   <!-- pop up  -->
+
+   
+   <div class="modal__wrapper">
+    <div class="modal__container">
+        <button class="close">&times;</button>
+        <h2>Account Create ✔</h2>
+        <div class="action">
+            <button class="btn__purple">Go To login</button>
+        </div>
+    </div>
+</div>
    
    
    <!-- footer -->
@@ -133,3 +147,71 @@
     
 </body>
 </html>
+<script>
+    document.querySelector("form").addEventListener("submit",formfun)
+    
+
+    function formfun(e){
+        e.preventDefault()
+        let fname = document.querySelector("#fname").value
+        let lname = document.querySelector("#lname").value
+        let email = document.querySelector("#email").value
+        let pass = document.querySelector("#pass").value
+
+        console.log(fname,lname,email,pass)
+
+        if(fname=="" || lname=="" || email=="" || pass==""){
+            alert("please fill correct data")
+        }else if(pass.length<8){
+            alert("password must be 8 char.")
+        }else{
+            
+            localStorage.setItem("email",email)
+            localStorage.setItem("pass",pass)
+            popup()
+        }
+
+        
+    }
+
+    // pop up
+
+    document.querySelector(".btn__purple").addEventListener("click",function(){
+        document.location.href = "log.html"
+    })
+
+function popup(){
+    // const trigger = document.querySelector('#cardclick');
+    const modalWrapper = document.querySelector('.modal__wrapper');
+    const closeBtn = document.querySelector('.close');
+
+    // trigger.addEventListener('click', function(){
+    // });
+    openModal();
+
+    closeBtn.addEventListener('click', function(){
+        closeModal();
+    });
+
+    modalWrapper.addEventListener('click', function(e){
+        if(e.target !== this) return;
+        closeModal();
+    });
+
+    document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape') {
+            closeModal();
+        }
+    })
+
+    function openModal() {
+        modalWrapper.classList.add('active');
+    }
+    function closeModal() {
+        modalWrapper.classList.remove('active');
+    }
+
+}
+
+
+</script>

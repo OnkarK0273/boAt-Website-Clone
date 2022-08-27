@@ -15,17 +15,17 @@
 }
 
 .modal__container {
-    background: black;
-    width: 200px;
+    background:#141414;
+    width: 250px;
     max-width: 90%;
-    padding: 30px;
-    border-radius: 4px;
+    padding: 60px;
+    border-radius: 8px;
     position: relative;
     transform: translateY(-100%);
     transition: all .3s ease-in-out;
 }
 .btn__purple {
-    margin-top: 20px;
+    margin-top: 40px;
     background:  red;
     padding: 10px 40px;
     color: #fff;
@@ -34,7 +34,8 @@
     cursor: pointer;
 }
 .btn__purple:hover {
-    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+    background: rgb(234,240,241);
+    background: linear-gradient(90deg, rgba(234,240,241,1) 0%, rgba(240,5,5,1) 100%);
 }
 
 h2 {

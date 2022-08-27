@@ -55,6 +55,10 @@ body{
    font-size: larger;
    
 }
+#navbar>.navmid p:hover{
+    color: red;
+}
+
 .nav input{
     border-radius: 30px;
     height:40px;
@@ -197,6 +201,30 @@ body{
 /* Medium screens */
 @media all and (min-width: 651px) and (max-width: 900px) {
 
+
+    /* navbar */
+    #navbar>.navmid p{
+        color:#141414;
+       font-size: larger;
+       position: absolute;
+       bottom: 0;
+       
+    }
+    .nav input{
+        border-radius: 30px;
+        height:40px;
+        width:440px;
+        border: 0px;
+    }
+    #navbar>.navmid{
+        display: flex;
+        align-items: center;
+        column-gap:0px;
+        border: 0px solid white;
+        
+    }
+
+
     /* footer */
 
     .footer{
@@ -222,6 +250,29 @@ body{
 /* Small screens */
 
 @media all and (min-width: 250px) and (max-width: 650px) {
+
+     /* navbar */
+     #navbar>.navmid p{
+        color:#141414;
+       font-size: larger;
+       position: absolute;
+       bottom: 0;
+       
+    }
+    .nav input{
+        border-radius: 30px;
+        height:40px;
+        width:440px;
+        border: 0px;
+    }
+    #navbar>.navmid{
+        display: flex;
+        
+        align-items: center;
+        column-gap:0px;
+        border: 0px solid white;
+        
+    }
 
     /* footer */
 
