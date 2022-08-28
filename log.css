@@ -168,12 +168,24 @@ p {
 
 
 
+/* Medium screens */
+@media all and (min-width: 651px) and (max-width: 1000px) {
+    .form{
+        width:60%;
+        margin: auto;
+        display:flex ;
+        flex-direction: column;
+        row-gap:15px;
+        margin-top: 10px;
+        padding: 20px;
+    }
+}
 
 /* Small screens */
 
 @media all and (min-width: 250px) and (max-width: 650px) {
     .form{
-        width:40%;
+        width:80%;
         margin: auto;
         display:flex ;
         flex-direction: column;
