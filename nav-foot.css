@@ -176,8 +176,8 @@ body{
     background-color: black;
     display: flex;
     justify-content: space-around;
+    border: 0px solid white;
     
-    margin: auto;
 }
 .playstore>.app{
     display: flex;
@@ -203,9 +203,18 @@ body{
 
 
     /* navbar */
+    #navbar>.nav{
+        display: flex;
+        justify-content: flex-start;
+        column-gap:10px;
+       
+        align-items: center; 
+       
+        border: 0px solid white;
+    }
     #navbar>.navmid p{
         color:#141414;
-       font-size: larger;
+       font-size: 0px;
        position: absolute;
        bottom: 0;
        
@@ -213,7 +222,7 @@ body{
     .nav input{
         border-radius: 30px;
         height:40px;
-        width:440px;
+        width:300px;
         border: 0px;
     }
     #navbar>.navmid{
@@ -221,6 +230,7 @@ body{
         align-items: center;
         column-gap:0px;
         border: 0px solid white;
+        opacity:0 ;
         
     }
 
@@ -241,6 +251,22 @@ body{
         width:80%;
         margin: auto;
 
+    }
+    .playstore{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        row-gap:20px;
+    
+        
+    }
+    .playstore {
+      
+      width: 100%;
+      margin: auto;
+        
     }
 
 
@@ -254,7 +280,7 @@ body{
      /* navbar */
      #navbar>.navmid p{
         color:#141414;
-       font-size: larger;
+       font-size: 0px;
        position: absolute;
        bottom: 0;
        
@@ -262,7 +288,7 @@ body{
     .nav input{
         border-radius: 30px;
         height:40px;
-        width:440px;
+        width:300px;
         border: 0px;
     }
     #navbar>.navmid{
@@ -291,6 +317,23 @@ body{
         margin: auto;
 
     }
+    .playstore{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        row-gap:20px;
+    
+        
+    }
+    .playstore {
+      
+      width: 100%;
+      margin: auto;
+        
+    }
+
 
 }
 
